@@ -4,8 +4,8 @@ class ProductsController < ApplicationController
   end
 
   def add_to_cart
-    item = params[:cart_name]
+    item = params[:item_name]
 
-    cart << item_name
+    cart << item
   end
 end
