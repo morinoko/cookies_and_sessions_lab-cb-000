@@ -7,5 +7,7 @@ class ProductsController < ApplicationController
     item = params[:item_name]
 
     cart << item
+
+    redirect_to index
   end
 end
