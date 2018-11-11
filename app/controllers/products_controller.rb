@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @cart_items = cart
+    @products = cart
   end
 
   def add_to_cart
