@@ -8,10 +8,10 @@
 <% end %>
 
 <h2>Currently in your cart:</h2>
-<% if @cart_items.count > 0 %>
+<% if @products.count > 0 %>
   <ul>
-    <% @cart_items.each do |item| %>
-      <li><%= item %></li>
+    <% @products.each do |product| %>
+      <li><%= product %></li>
     <% end %>
   </ul>
 <% else %>
