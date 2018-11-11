@@ -10,7 +10,7 @@
 <h2>Currently in your cart:</h2>
 <% if cart.size > 0 %>
   <ul>
-    <% @products.each do |product| %>
+    <% cart.each do |product| %>
       <li><%= product %></li>
     <% end %>
   </ul>
