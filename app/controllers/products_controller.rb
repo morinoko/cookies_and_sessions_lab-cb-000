@@ -8,6 +8,6 @@ class ProductsController < ApplicationController
 
     cart << item
 
-    redirect_to index
+    redirect_to root_path
   end
 end
