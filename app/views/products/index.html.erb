@@ -1,0 +1,16 @@
+<h1>Shopping Cart</h1>
+
+<%= form_tag %>
+
+<% end %>
+
+<h2>Currently in your cart:</h2>
+<% if @cart_items.count > 0 %>
+  <ul>
+    <% @cart_items.each do |item| %>
+      <li><%= item %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>You don't have any items yet.</p>
+<% end %>
