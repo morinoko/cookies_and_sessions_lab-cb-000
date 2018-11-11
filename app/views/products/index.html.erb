@@ -8,7 +8,7 @@
 <% end %>
 
 <h2>Currently in your cart:</h2>
-<% if @products.count > 0 %>
+<% if @products %>
   <ul>
     <% @products.each do |product| %>
       <li><%= product %></li>
